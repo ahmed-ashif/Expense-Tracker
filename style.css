@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+h1{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+#expense-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid #fff;
+  box-shadow: 10px 10px 8px rgba(255, 255, 255, 0.562);
+}
+#expense-form input, #expense-form select{
+  height: 4.5vh;
+  width: 30rem;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.add-expense{
+  height: 2.3rem;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(7, 179, 7);
+  color: #fff;
+  font-size: 1.2rem;
+}
+.add-expense:hover{
+  background-color:  rgb(8, 153, 8);
+}
+
+/* Expense Summary CSS*/
+h2{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: #fff;
+}
+#expense-table{
+  height: 100%;
+  width: 50%;
+  border-collapse: collapse;
+}
+th, td{
+  border: 2px solid black;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  font-weight: 100;
+}
+th{
+  background-color: rgb(7, 179, 7);
+}
+
+/* Responsive Design */
+@media (max-width: 600px){
+  h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  #expense-form input, #expense-form select{
+    height: 4.5vh;
+    width: 10rem;
+  }
+  h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  #expense-table{
+    width: 18rem;
+  }
+}
