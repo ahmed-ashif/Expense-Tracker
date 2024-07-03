@@ -16,6 +16,7 @@ html , body{
   align-items: center;
   flex-direction: column;
   padding: 50px;
+  overflow: hidden;
 }
 h1{
   font-size: 2rem;
@@ -31,7 +32,7 @@ h1{
   gap: 1.5rem;
   padding: 2rem;
   border: 1px solid #fff;
-  box-shadow: 10px 10px 8px rgba(255, 255, 255, 0.562);
+  box-shadow: 5px 5px 4px rgba(255, 255, 255, 0.562);
 }
 #expense-form input, #expense-form select{
   height: 4.5vh;
@@ -53,20 +54,42 @@ h1{
 }
 
 /* Expense Summary CSS*/
+#expense-container{
+  height: 100px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-direction: row;
+  margin: 20px;
+}
+#pdf-download{
+  height: 50px;
+  width: 90px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(7, 179, 7);
+  color: #fff;
+  font-size: .8rem;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.411);
+}
+#pdf-download:hover{
+  background-color:  rgb(8, 153, 8);
+}
 h2{
   margin-top: 40px;
   margin-bottom: 10px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 200;
   color: #fff;
 }
 #expense-table{
-  height: 100%;
-  width: 50%;
+  height: 100px;
+  width: 500px;
   border-collapse: collapse;
 }
 th, td{
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   color: #fff;
   height: 40px;
   text-align: center;
@@ -92,5 +115,9 @@ th{
   }
   #expense-table{
     width: 18rem;
+    font-size: .7rem;
+  }
+  #expense-container{
+    width: 400px;
   }
 }
