@@ -103,7 +103,7 @@ th{
 
 
 /* Responsive Design */
-@media (max-width: 600px){
+@media (max-width: 700px){
   h1{
     font-size: 1.5rem;
     font-weight: 400;
@@ -121,6 +121,6 @@ th{
     font-size: .7rem;
   }
   #expense-container{
-    width: 300px;
+    width: 350px;
   }
 }
