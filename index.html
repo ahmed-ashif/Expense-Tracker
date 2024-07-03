@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+
+      <form id="expense-form">
+        <label for="description" style="color: #fff">Description :</label>
+        <input
+          type="text"
+          id="description"
+          placeholder="Expense Description"
+          required
+        />
+
+        <label for="category" style="color: #fff">Category :</label>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Beverages">Beverages</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+          <option value="Transportation">Transportation</option>
+          <option value="Outing">Outing</option>
+          <option value="Entertainment">Entertainment</option>
+        </select>
+
+        <label for="date" style="color: #fff">Date :</label>
+        <input type="date" id="date" required />
+
+        <label for="amount" style="color: #fff">Amount :</label>
+        <input type="number" placeholder="Amount in INR" id="amount" required />
+        <input type="submit" value="Add Expense" class="add-expense" />
+      </form>
+
+      <!-- Expense Summary -->
+      <div id="expense-container">
+        <h2>Expense Summary</h2>
+      </div>
+
+      <table id="expense-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+
+        <tbody id="expense-list"></tbody>
+      </table>
+    </div>
+
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Javascript tag -->
+    <script src="script.js"></script>
+  </body>
+</html>
