@@ -29,17 +29,25 @@
           <option value="Entertainment">Entertainment</option>
         </select>
 
+        <input type="date" id="date">
+
         <input type="number" placeholder="Amount" id="amount"/>
-        <button class="add-expense" onclick="addExpense(e);">Add Expense</button>
+        <input type="submit" value="Add Expense" class="add-expense">
       </form>
 
       <!-- Expense Summary -->
-       <h2>Expense Summary</h2>
+       <div id="expense-container">
+        <h2>Expense Summary</h2>
+        <!-- <button id="pdf-download">Download</button> -->
+       </div>
+       
+
        <table id="expense-table">
         <thead>
           <tr>
             <th>Description</th>
             <th>Category</th>
+            <th>Date</th>
             <th>Amount</th>
           </tr>
         </thead>
@@ -48,10 +56,20 @@
 
         </tbody>
 
+        
        </table>
     </div>
 
+    
+    <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- PDF maker CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+    <!-- Javascript tag -->
     <script src="script.js"></script>
+
   </body>
 </html>
