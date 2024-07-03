@@ -12,12 +12,14 @@
       <h1>Expense Tracker</h1>
 
       <form id="expense-form">
+        <p style="color: #fff;">Description :</p>
         <input
           type="text"
           id="description"
           placeholder="Expense Description"
         />
 
+        <p style="color: #fff;">Category :</p>
         <select id="category">
           <option value="">Select Category</option>
           <option value="Breakfast">Breakfast</option>
@@ -29,16 +31,18 @@
           <option value="Entertainment">Entertainment</option>
         </select>
 
-        <input type="date" id="date" placeholder="DD/MM/YYYY">
+        <p style="color: #fff;">Date :</p>
+        <input type="date" id="date" placeholder="d">
 
-        <input type="number" placeholder="Amount" id="amount"/>
+        <p style="color: #fff;">Amount :</p>
+        <input type="number" placeholder="Amount in INR " id="amount"/>
         <input type="submit" value="Add Expense" class="add-expense">
       </form>
 
       <!-- Expense Summary -->
        <div id="expense-container">
         <h2>Expense Summary</h2>
-        <!-- <button id="pdf-download">Download</button> -->
+        <button id="pdf-download">Download</button>
        </div>
        
 
